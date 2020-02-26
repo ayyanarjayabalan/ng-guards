@@ -3,10 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DirtycheckComponent } from './dirtycheck/dirtycheck.component';
+import { SecondComponent } from './second/second.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DirtycheckComponent,
+    SecondComponent
   ],
   imports: [
     BrowserModule,
