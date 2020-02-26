@@ -6,15 +6,26 @@ import { Injectable } from '@angular/core';
 export class AccountService {
 
   private isLoggedIn = false;
+  private role = 'basic';
 
   constructor() { }
+
+  getUserRole(): string {
+    return this.role;
+  }
 
   isAuthenticated() {
     return this.isLoggedIn;
   }
 
-  login() {
+  login(role: string) {
     this.isLoggedIn = true;
+
+    if (role) {
+      this.role = role;
+    } else {
+      this.role = 'basic';
+    }
   }
 
   logout() {

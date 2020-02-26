@@ -1,6 +1,10 @@
 <p>login works!</p>
 
-<button [hidden]="isLogged()" (click)="login()">Login</button>
+<button [hidden]="isLogged()" (click)="login('basic')">Basic Login</button>
+
+<br><br>
+
+<button [hidden]="isLogged()" (click)="login('admin')">Admin Login</button>
 
 <br><br>
 
@@ -9,3 +13,5 @@
 <br><br>
 
 <a [routerLink]="[ '/dashboard']">Dashboard</a>
+<br><br>
+<a [routerLink]="[ '/admin']">Admin</a>
