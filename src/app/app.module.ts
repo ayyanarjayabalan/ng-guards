@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DirtycheckComponent } from './dirtycheck/dirtycheck.component';
 import { SecondComponent } from './second/second.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirtycheckComponent,
-    SecondComponent
+    SecondComponent,
+    DashboardComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

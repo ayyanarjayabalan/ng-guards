@@ -1,0 +1,11 @@
+<p>login works!</p>
+
+<button [hidden]="isLogged()" (click)="login()">Login</button>
+
+<br><br>
+
+<button [hidden]="!isLogged()" (click)="logout()">Logout</button>
+
+<br><br>
+
+<a [routerLink]="[ '/dashboard']">Dashboard</a>
